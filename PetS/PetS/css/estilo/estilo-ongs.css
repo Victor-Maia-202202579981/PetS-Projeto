@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'News Cycle', sans-serif;
+  }
+  
+  /*CORES DO SITE*/
+:root{
+    --cor1:#FC8413; /*laranja*/
+    --cor2:#00A599; 
+    --cor3:#E8C230; 
+  
+}
+  /*FONTE DO SITE: BUSCANDO NO GOOGLE A FONTE*/
+  @import url('https://fonts.googleapis.com/css2?family=Mooli&family=News+Cycle:wght@400;700&display=swap');
+  
+  /*todos os links*/
+a {
+    text-decoration: none; /*sem a linha de baixo*/
+    color: black;
+    font-family: 'News Cycle', sans-serif;
+}
+a:hover{
+    opacity: 0.7;
+}
+.logo{
+    width: 32px;
+    height: 2px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin: 8px;
+    position:relative ;
+    opacity: 0.7;
+    
+}
+
+  /*MENU*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'News Cycle', sans-serif;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 6.5vh;
+}
+.menu{ 
+    list-style: none;
+    display: flex;
+    margin-left: 150px;
+}
+  /*MENU - itens*/
+.menu li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+    cursor: pointer;
+}
+.btn-adotar:hover{
+    background-color: #FFFFFF;
+    color: #FC8413;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+  
+.btn-entrar:hover{
+    background-color: #FFFFFF;
+    color: #E8C230;
+    font-weight: bold;
+    transform: scale(1.2);
+}
+  
+.btn-adotar{
+    align-items: center;
+    text-align: center;
+    margin-left: 600px;
+    margin-right: 10px;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    letter-spacing: 1px;
+    display: flex;
+    width: 140px;
+    height: 41px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 1px solid #FC8413;
+    background-color: #FC8413;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+  
+.btn-entrar{
+    align-items: center;
+    text-align: center;
+    margin-left: 600px;
+    margin-right: 150px;
+    justify-content: center;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    display: flex;
+    width: 140px;
+    height: 41px;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 1px solid #E8C230;
+    background-color: #E8C230;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+.conteiner-ongs{
+    position: absolute;
+    width: 2000px;
+    height: 397px;
+    left: 0px;
+    top: 62px;
+    background: #EDBFA5;
+}
+
+.conteiner-ongs-titulo{
+    position: absolute;
+    width: 281px;
+    height: 79px;
+    left: 200px;
+    top: 199px;
+
+    font-family: 'News Cycle', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 64px;
+
+    color: #A58465;
+
+
+}
+
+.conteiner-ongs-titulo-paragrafo{
+    position: absolute; 
+    width: 1205px;
+    height: 78px;   
+    left: 200px;
+    top: 265px;
+
+    font-family: 'News Cycle', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 41px;
+
+    color: #A58465;
+
+}
+
+.card-ong-01{
+    position: absolute;
+    width: 316px;
+    height: 419px;
+    left: 220px;
+    top: 401px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.card-ong-01-img{
+    position: absolute;
+    width: 214px;
+    height: 236px;
+    left: 50px;
+    top: 10px;
+}
+
+.card-ong-01 h3{
+
+    position: absolute;
+    width: 311px;
+    height: 79px;
+    left: 25px;
+    top: 250px;
+
+    font-family: 'News Cycle', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 25px;
+    line-height: 41px;
+
+    color: #000000;
+}
+
+.card-ong-01 p{
+    position: absolute;
+    width: 303px;
+    height: 50px;
+    left: 15px;
+    top: 350px;
+
+    font-family: 'News Cycle', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+
+    color: #000000;
+}
+
+.card-ong-02{
+    position: absolute;
+    width: 316px;
+    height: 419px;
+    left: 620px;
+    top: 401px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+.card-ong-02 img{
+    position: absolute;
+    width: 214px;
+    height: 236px;
+    left: 50px;
+    top: 10px;
+}
+
+.card-ong-02 h3{
+
+    position: absolute;
+    width: 311px;
+    height: 79px;
+    left: 10px;
+    top: 250px;
+
+    font-family: 'News Cycle', sans-serif;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 25px;
+    line-height: 41px;
+
+    color: #000000;
+}
+
+.card-ong-02 p{
+    position: absolute;
+    width: 303px;
+    height: 50px;
+    left: 10px;
+    top: 300px;
+
+    font-family: 'News Cycle', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+
+    color: #000000;
+}
+
+/*CONTENER RODAPÉ*/
+.conteiner-buttom{
+
+    position: absolute;
+    width: 2000px;
+    height: 300px;
+    left: 3px;
+    top: 1000px;
+  
+    background: #07665F;
+    border-radius: 5px;
+  }
+  
+.conteiner-buttom img{
+    position: absolute;
+    width: 158px;
+    height: 156px;
+    left: 380px;
+    top: 7px;
+}
+  
+.conteiner-buttom p{
+    position: absolute;
+    width: 317px;
+    height: 99px;
+    left: 450px;
+    top: 122px;
+    font-family: 'News Cycle', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: justify;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.conteiner-buttom h3{
+    position: absolute;
+    width: 97px;
+    height: 31px;
+    left: 850px;
+    top: 54px;
+    font-family: 'News Cycle', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 31px;
+    text-align: justify;
+    color: #FC8413;
+} 
+  
+.conteiner-item1{
+  
+    font-family: 'News Cycle', sans-serif;
+    position: absolute;
+    width: 106px;
+    height: 31px;
+    left: 850px;
+    top: 101px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 31px;
+    text-align: justify;
+    color: #FFFFFF;
+}
+  
+.conteiner-item2{
+  
+    font-family: 'News Cycle', sans-serif;
+    position: absolute;
+    width: 106px;
+    height: 31px;
+    left: 850px;
+    top: 140px;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 31px;
+    text-align: justify;
+    color: #FFFFFF;
+}
