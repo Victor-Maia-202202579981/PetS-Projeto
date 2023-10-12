@@ -147,6 +147,7 @@ img{
   font-family: 'News Cycle', sans-serif;
   font-style: normal;
   font-size: 30px;
+  text-decoration-line: underline;
   margin-top: 40px;
   margin-bottom: -160px;
 }
@@ -437,7 +438,7 @@ body{
   width: 1094px;
   height: 356px;
   margin-left: 500px;
-  margin-top: 80px;
+  margin-top: 40px;
   background: #FC8413;
   border-radius: 20px;
 }

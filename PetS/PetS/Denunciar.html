@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denuncias</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto+Condensed:wght@300;400&display=swap');
+    </style>
+
     <link rel="shortcut icon" href="img/logo/icone-top-aba.png" type="image/x-icon">
     <link rel="stylesheet" href="css/estilo/estilo-denuncias.css">
 </head>
@@ -17,14 +21,14 @@
                 <li><a href="ONGS.html">ONGs/Potetores</a></li>
                 <li><a href="Denunciar.html">Denunciar</a></li>
             </ul>
-            <a><button class="btn-adotar">Adotar</button></a>
+            <a href="adotar.html"><button class="btn-adotar">Adotar</button></a>
             <a href="Logar.html"><button class="btn-entrar">Entrar</button></a>
         </nav>
 
         <div class="container-Denuncias">
             <h2 class="denuncia-texto">Denuncias</h2>
             <p>As denunciais são um dos meios de ajudar aqueles que não conseguem expressas suas dores e não podem pedir ajudar.</p>
-            <div class="container-contatos"> <h2>Contatos</h2></div>
+            <h2  id="contatos-guia" class="container-contatos">Contatos</h2>
             <div class="ibama"> <h3>Ibama</h3>
             <p>As denúncias podem ser feitas pelo telefone 0800 61 8080 (gratuitamente) ou pelo email para linhaverde.sede@ibama.gov.br. O IBAMA (Instituto Brasileiro do Meio Ambiente e dos Recursos Naturais Renováveis) as encaminhará para a delegacia mais próxima do local da agressão.</p>
         </div>
@@ -39,17 +43,21 @@
         <div class="amazonas"><h2>Amazonas</h2>
         <p>• Disque Denúncia 0800-092-0500</p>
         </div>
-        <div class="formulario-denuncias"><h2>Formulário para Denuncias</h2>
+        <div id="formulario-guia" class="formulario-denuncias"><h2>Formulário para Denuncias</h2>
         <p>A PetS disponibiliza um meio de denuncia enviada por formulário e nossos assistente verificam sua denuncia e assim após a verificação seguimos para as autoridades.</p>
         </div>
-        <a href="Formulário.html" class="formulario">Formulário.</a>
-            <div class="container-guia">
-                    <h3>Guia</h3>
-                    <h4 class="guia-item1">Contatos</h4>                    
-                    <h4 class="guia-item2">Formulário de denuncias</h4>
+        <a href="Formulário-denunciar.html" class="formulario">Formulário.</a>
+        
+        <!-- GUIA -->
+        <div class="container-guia">
+                    <ul><h3>Guia</h3></ul>
+                    <li><a href="#contatos-guia"><h4 class="guia-item1">Contatos</h4></a></li>                    
+                    <li><a href="#formulario-guia"><h4 class="guia-item2">Formulário de denuncias</h4></a></li>
                 </div>
 
     </header>
+
+    <!-- RODAPÉ DA PÁGINA-->
     <div class="conteiner-buttom">
         <img src="img/logo/icone-rodape-logo.png" alt="">
         <p>A PetS é um programa criado para facilitar o encontro seu amigo de quatro patas. Sendo através de ONG ou responsável do pet.</p>

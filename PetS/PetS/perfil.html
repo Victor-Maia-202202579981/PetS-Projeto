@@ -4,48 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
-    <link rel="shortcut icon" href="img/logo/icone-top-aba.png" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&family=Roboto+Condensed:wght@300;400&display=swap');
+    </style>
+    
+    <!-- BUSCANDO O ESTILO DO SITE NO ESTILO.CSS -->
     <link rel="stylesheet" href="css/estilo/estilo-perfil.css">
+    <!-- LOGO NA ABA DA PÁGINA -->
+    <link rel="shortcut icon" href="img/logo/icone-top-aba.png" type="image/x-icon"> 
 </head>
 <body>
-    <header><nav>
-        <!-- MENU -->
-            <ul class="menu">
-                <li><a class="logo" src="index.html">PetS</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Institucional.html">Institucional</a></li>
-                <li><a href="ONGS.html">ONGs/Potetores</a></li>
-                <li><a href="Denunciar.html">Denunciar</a></li>
-            </ul>
-            <a><button class="btn-adotar">Adotar</button></a>
-            <a href="Logar.html"><button class="btn-entrar">Entrar</button></a>
-        </nav>
-        <div class="container">
-        <div class="container-caixa"> 
-            <h2>Portal de Perfil</h2>
-            <img class="use-imagem" src="img/use-img.png" alt="">
-            <h3>Detalhes pessoas</h3>
-            <h4 class="nometitulo">Nome</h4>
-            <input class="nome" type="text">
-            <h4 class="nometitulo2">Email</h4>
-            <p class="Emailexp">use@gmail.com</p>
-            <h4 class="nometitulo3">CPF/CNPJ</h4>
-            <p class="titulo3p">XXX.XXX.XXX-XX</p>
-            <a><button class="senha">Altera senha</button></a>
+    <header>
+        <!-- LOGO NO CORPO DA PÁGINA 
+       <div class="logo">
+           <img src="img/icone-letra.png" alt="Logo tipo PetS">
+       </div>-->
 
-        </div>
+<!-- NAVEGABILIDADE- USUÁRIO PODE ACESSAR OUTRAS ABAS -->
+       <nav>
+       <!-- MENU -->
+           <ul class="menu">
+               <li><a class="logo" src="index.html">PetS</a></li>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="institucional.html">Institucional</a></li>
+               <li><a href="ongs.html">ONGs/Potetores</a></li>
+               <li><a href="Denunciar.html">Denunciar</a></li>
+           </ul>
+           <a><button class="btn-adotar">Adotar</button></a>
+           <a href="Logar.html"><button class="btn-entrar">Entrar</button></a>
+       </nav>
+       
+
+    <div class="container-cabecalho">
+        <div class="container-caixa">
+            <h2 class="portal">Portal de Perfil</h2>
+            <img class="imgAvatar" src="img/default-avatar.png" alt="">
+            <h3 class="detalhe">Detalhes pessoais</h3>
+            <p class="nome">Nome</p>
+            <input class="digitar-nome" type="text">
+            <p class="email">Email</p>
+            <p class="email-usuario">usuário@gmail.com</p>
+            <p class="cpf-cnpj">CPF/CNPJ</p>
+            <p class="cpf">XXX.XXX.XXX-XX</p>
+            <p class="senha">Senha</p>
+            <a><button class="btn-alterar">Alterar senha</button></a>
+                </header>
     </div>
-    </header>
-   <!---<div class="conteiner-buttom">
-        <img src="img/logo/icone-rodape-logo.png" alt="">
-        <p>A PetS é um programa criado para facilitar o encontro seu amigo de quatro patas. Sendo através de ONG ou responsável do pet.</p>
-        <h3>Institucional</h3>
-        <h4 class="conteiner-item1">Sobre o PetS</h4>
-        <h4 class="conteiner-item2">FAQ</h4>
-    </div> -->
-    
-
-
-    
-</body>
-</html>
+                    <!-- RODAPÉ DA PÁGINA-->
+                    <div class="conteiner-buttom">
+                        <img src="img/logo/icone-rodape-logo.png" alt="">
+                        <p>A PetS é um programa criado para facilitar o encontro seu amigo de quatro patas. Sendo através de ONG ou responsável do pet.</p>
+                        <h3>Institucional</h3>
+                        <h4 class="conteiner-item1">Sobre o PetS</h4>
+                        <h4 class="conteiner-item2">FAQ</h4>
+                    </div>
+    </body>

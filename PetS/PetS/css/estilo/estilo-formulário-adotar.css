@@ -1,38 +1,44 @@
+/*SELECIONA TODOS OS ELEMENTOS*/
 * {
     margin: 0;
     padding: 0;
     font-family: 'News Cycle', sans-serif;
-  }
-  
-  /*CORES DO SITE*/
-:root{
+    }
+    
+    /*CORES DO SITE*/
+  :root{
     --cor1:#FC8413; /*laranja*/
     --cor2:#00A599; 
     --cor3:#E8C230; 
-  
-}
+    
+  }
+  /*FONTE DO SITE: BUSCANDO NO GOOGLE A FONTE*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
   /*todos os links*/
-a {
+  
+  a {
     text-decoration: none; /*sem a linha de baixo*/
     color: black;
     font-family: 'News Cycle', sans-serif;
-}
-a:hover{
+  }
+  
+  a:hover{
     opacity: 0.7;
-}
-.logo{
+  }
+  
+  .logo{
     width: 32px;
     height: 2px;
     font-weight: bold;
     letter-spacing: 3px;
     margin: 8px;
     position:relative ;
-    opacity: 0.7;
-    
-}
-
+    opacity: 0.7;    
+  }
+  
   /*MENU*/
-nav {
+  nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -40,33 +46,36 @@ nav {
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 6.5vh;
-}
-.menu{ 
+  }
+    
+  .menu{ 
     list-style: none;
     display: flex;
     margin-left: 150px;
-}
+  }
+  
   /*MENU - itens*/
-.menu li{
+  .menu li{
     letter-spacing: 3px;
     margin-left: 32px;
     cursor: pointer;
-}
-.btn-adotar:hover{
+  }
+  
+  .btn-adotar:hover{
     background-color: #FFFFFF;
     color: #FC8413;
     font-weight: bold;
     transform: scale(1.2);
-}
-  
-.btn-entrar:hover{
+  }
+    
+  .btn-entrar:hover{
     background-color: #FFFFFF;
     color: #E8C230;
     font-weight: bold;
     transform: scale(1.2);
-}
-  
-.btn-adotar{
+  }
+    
+  .btn-adotar{
     align-items: center;
     text-align: center;
     margin-left: 600px;
@@ -86,9 +95,9 @@ nav {
     background-color: #FC8413;
     border-radius: 5px;
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
-}
+  }  
   
-.btn-entrar{
+  .btn-entrar{
     align-items: center;
     text-align: center;
     margin-left: 600px;
@@ -109,179 +118,190 @@ nav {
     background-color: #E8C230;
     border-radius: 5px;
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
-}
-.conteiner-ongs{
+  }
+  
+  .container-formulário {
     position: absolute;
     width: 2000px;
     height: 397px;
     left: 0px;
-    top: 55px;
-    background: #EDBFA5;
-}
-
-.conteiner-ongs-titulo{
+    top: 57px;
+    background: #9FCDCA;
+  }
+  
+  .container-formulário .formulário-texto{
     position: absolute;
-    width: 281px;
-    height: 79px;
-    left: 200px;
-    top: 199px;
-
+    width: 651px;
+    height: 62px;
+    left: 400px;
+    top: 130px;
+      
     font-family: 'News Cycle', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 39px;
     line-height: 64px;
-
-    color: #A58465;
-
-
-}
-
-.conteiner-ongs-titulo-paragrafo{
-    position: absolute; 
-    width: 1205px;
-    height: 78px;   
-    left: 200px;
-    top: 265px;
-
+    
+    color: #07665F;  
+  }
+  .container-caixa{
+    position: absolute;
+    width: 911px;
+    height: 1100px;
+    left: 400px;
+    top: 288px;
+  
+    background: #F8F8F8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+  .container-caixa .p1-descrição{
+    position: absolute;
+    width: 896px;
+    height: 87px;
+    left: 16px;
+    top: 50px;
+  
     font-family: 'News Cycle', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 41px;
-
-    color: #A58465;
-
-}
-
-.card-ong-01{
+  
+    color: #000000;
+  }
+  .container-caixa .resumo{
     position: absolute;
-    width: 316px;
-    height: 419px;
-    left: 220px;
-    top: 401px;
-
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-}
-
-.card-ong-01-img{
-    position: absolute;
-    width: 214px;
-    height: 236px;
-    left: 50px;
-    top: 10px;
-}
-
-.card-ong-01 h3{
-
-    position: absolute;
-    width: 311px;
-    height: 79px;
-    left: 25px;
-    top: 250px;
-
+    width: 1000px;
+    height: 45px;
+    left: 16px;
+    top: 200px;
+  
     font-family: 'News Cycle', sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 25px;
     line-height: 41px;
-
+  
     color: #000000;
-}
-
-.card-ong-01 p{
+  }
+  .container-caixa .p2-descrição{
     position: absolute;
-    width: 303px;
-    height: 50px;
-    left: 15px;
-    top: 350px;
-
+    left: 18px;
+    top: 240px;
+  
     font-family: 'News Cycle', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 25px;
-
+    font-size: 15xp;
+    line-height: 30px;
+  
     color: #000000;
-}
-
-.card-ong-02{
+  }
+  .container-caixa .formulário-titulo{
+    box-sizing: border-box;
+  
     position: absolute;
-    width: 316px;
-    height: 419px;
-    left: 620px;
-    top: 401px;
-
+    width: 838px;
+    height: 58px;
+    left: 18px;
+    top: 290px;
+    font-family: 'News Cycle', sans-serif;
     background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 15px;
-}
-
-.card-ong-02 img{
+    border: 1px solid #000000;
+    border-radius: 5px;
+  
+  }
+  .container-caixa .adocao{
     position: absolute;
-    width: 214px;
-    height: 236px;
-    left: 50px;
-    top: 10px;
-}
-
-.card-ong-02 h3{
-
-    position: absolute;
-    width: 311px;
-    height: 79px;
-    left: 10px;
-    top: 250px;
-
+    width: 1000px;
+    height: 45px;
+    left: 16px;
+    top: 450px;
+    
     font-family: 'News Cycle', sans-serif;
     font-style: normal;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 25px;
     line-height: 41px;
-
+    
     color: #000000;
-}
-
-.card-ong-02 p{
+  }
+  .container-caixa .p3-descrição{
     position: absolute;
-    width: 303px;
-    height: 50px;
-    left: 10px;
-    top: 300px;
-
+    left: 18px;
+    top: 495px;
+  
     font-family: 'News Cycle', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 25px;
-
+    font-size: 19px;
+    line-height: 30px;
+  
     color: #000000;
-}
+  }
+  .container-caixa textarea.formulário-descrição{
+    box-sizing: border-box;
+  
+    position: absolute;
+    width: 838px;
+    height: 356px;
+    left: 18px;
+    top: 550px;
+  
+    background: #FFFFFF;
+    border: 1px solid #000000;
+    border-radius: 5px;
+  }
 
-/*CONTENER RODAPÉ*/
-.conteiner-buttom{
-
+  .btn-enviar{
+    position: absolute;
+    width: 105px;
+    height: 51px;
+    left: 20px;
+    top: 941px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #FFFFFF;
+    border: 1px solid #07665F;
+    background: #07665F;
+    border-radius: 10px;
+  }
+  .btn-cancelar{
+    position: absolute;
+    width: 105px;
+    height: 51px;
+    left: 210px;
+    top: 941px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000000;
+    border: 1px solid #D9D9D9;
+    background: #FFFFFF;
+    border-radius: 10px;
+  }  
+  /*CONTENER RODAPÉ*/
+  .conteiner-buttom{
+  
     position: absolute;
     width: 2000px;
     height: 300px;
     left: 3px;
-    top: 1000px;
+    top: 1570px;
   
     background: #07665F;
     border-radius: 5px;
   }
   
-.conteiner-buttom img{
+  .conteiner-buttom img{
     position: absolute;
     width: 158px;
     height: 156px;
     left: 380px;
     top: 7px;
-}
+  }
   
-.conteiner-buttom p{
+  .conteiner-buttom p{
     position: absolute;
     width: 317px;
     height: 99px;
@@ -295,8 +315,8 @@ nav {
     text-align: justify;
     color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.conteiner-buttom h3{
+  }
+  .conteiner-buttom h3{
     position: absolute;
     width: 97px;
     height: 31px;
@@ -309,9 +329,9 @@ nav {
     line-height: 31px;
     text-align: justify;
     color: #FC8413;
-} 
+  } 
   
-.conteiner-item1{
+  .conteiner-item1{
   
     font-family: 'News Cycle', sans-serif;
     position: absolute;
@@ -326,9 +346,9 @@ nav {
     line-height: 31px;
     text-align: justify;
     color: #FFFFFF;
-}
+  }
   
-.conteiner-item2{
+  .conteiner-item2{
   
     font-family: 'News Cycle', sans-serif;
     position: absolute;
@@ -343,4 +363,5 @@ nav {
     line-height: 31px;
     text-align: justify;
     color: #FFFFFF;
-}
+  }
+  

@@ -3,42 +3,38 @@
   margin: 0;
   padding: 0;
   font-family: 'News Cycle', sans-serif;
+  }
+  
+  /*CORES DO SITE*/
+:root{
+  --cor1:#FC8413; /*laranja*/
+  --cor2:#00A599; 
+  --cor3:#E8C230; 
+  
 }
-
-/*CORES DO SITE*/
-:root {
-  --cor1: #FC8413;
-  /*laranja*/
-  --cor2: #00A599;
-  --cor3: #E8C230;
-
-}
-
 /*FONTE DO SITE: BUSCANDO NO GOOGLE A FONTE*/
-
-@import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
-
+  
+  @import url('https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap');
 /*todos os links*/
+
 a {
-  text-decoration: none;
-  /*sem a linha de baixo*/
+  text-decoration: none; /*sem a linha de baixo*/
   color: black;
   font-family: 'News Cycle', sans-serif;
 }
 
-a:hover {
+a:hover{
   opacity: 0.7;
 }
 
-.logo {
+.logo{
   width: 32px;
   height: 2px;
   font-weight: bold;
   letter-spacing: 3px;
   margin: 8px;
-  position: relative;
-  opacity: 0.7;
-
+  position:relative ;
+  opacity: 0.7;    
 }
 
 /*MENU*/
@@ -51,36 +47,35 @@ nav {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   height: 6.5vh;
 }
-
-.menu {
+  
+.menu{ 
   list-style: none;
   display: flex;
   margin-left: 150px;
-
 }
 
 /*MENU - itens*/
-.menu li {
+.menu li{
   letter-spacing: 3px;
   margin-left: 32px;
   cursor: pointer;
 }
 
-.btn-adotar:hover {
+.btn-adotar:hover{
   background-color: #FFFFFF;
   color: #FC8413;
   font-weight: bold;
   transform: scale(1.2);
 }
-
-.btn-entrar:hover {
+  
+.btn-entrar:hover{
   background-color: #FFFFFF;
   color: #E8C230;
   font-weight: bold;
   transform: scale(1.2);
 }
-
-.btn-adotar {
+  
+.btn-adotar{
   align-items: center;
   text-align: center;
   margin-left: 600px;
@@ -100,9 +95,9 @@ nav {
   background-color: #FC8413;
   border-radius: 5px;
   transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
-}
+}  
 
-.btn-entrar {
+.btn-entrar{
   align-items: center;
   text-align: center;
   margin-left: 600px;
@@ -125,243 +120,226 @@ nav {
   transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
 
-.container-logar {
+.container-formulário {
   position: absolute;
   width: 2000px;
   height: 397px;
   left: 0px;
-  top: 63px;
-  background: #EDBFA5;
+  top: 57px;
+  background: #9FCDCA;
 }
 
-.bem-vindo {
+.container-formulário .formulário-texto{
   position: absolute;
-  width: 300px;
-  height: 63px;
-  left: 730px;
-  top: 169px;
-
+  width: 651px;
+  height: 62px;
+  left: 400px;
+  top: 130px;
+    
   font-family: 'News Cycle', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 35px;
-  line-height: 58px;
-
-  color: #B19381;
+  font-size: 39px;
+  line-height: 64px;
+  
+  color: #07665F;  
 }
-
-.container-caixa1 {
+.container-caixa{
   position: absolute;
-  width: 400px;
-  height: 427px;
-  left: 300px;
-  top: 292.5px;
+  width: 911px;
+  height: 1500px;
+  left: 400px;
+  top: 288px;
+
+  background: #F8F8F8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.container-caixa .p1-descrição{
+  position: absolute;
+  width: 896px;
+  height: 87px;
+  left: 16px;
+  top: 50px;
+
+  font-family: 'News Cycle', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 41px;
+
+  color: #000000;
+}
+.container-caixa .resumo{
+  position: absolute;
+  width: 104px;
+  height: 45px;
+  left: 16px;
+  top: 200px;
+
+  font-family: 'News Cycle', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 41px;
+
+  color: #000000;
+}
+.container-caixa .p2-descrição{
+  position: absolute;
+  left: 18px;
+  top: 240px;
+
+  font-family: 'News Cycle', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15xp;
+  line-height: 30px;
+
+  color: #000000;
+}
+.container-caixa .formulário-titulo{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 838px;
+  height: 58px;
+  left: 18px;
+  top: 290px;
+  font-family: 'News Cycle', sans-serif;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 5px;
+
+}
+.container-caixa .relato{
+  position: absolute;
+  width: 104px;
+  height: 45px;
+  left: 16px;
+  top: 450px;
+  
+  font-family: 'News Cycle', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 41px;
+  
+  color: #000000;
+}
+.container-caixa .p3-descrição{
+  position: absolute;
+  left: 18px;
+  top: 495px;
+
+  font-family: 'News Cycle', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+
+  color: #000000;
+}
+.container-caixa textarea.formulário-descrição{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 838px;
+  height: 356px;
+  left: 18px;
+  top: 550px;
 
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
 }
-
-.container-caixa1 .acesso1 {
+.container-caixa .p4-descrição{
   position: absolute;
-  width: 300px;
-  height: 63px;
-  left: 30px;
-  top: 43px;
+  width: 837px;
+  height: 173px;
+  left: 18px;
+  top: 1050px;
 
   font-family: 'News Cycle', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 37px;
-  line-height: 54px;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 41px;
 
-  color: #B19381;
+  color: #000000;
 }
-
-.container-caixa1 .email1 {
+.container-caixa .p5-descrição{
   position: absolute;
-  width: 333px;
-  height: 66px;
-  left: 30px;
-  top: 110px;
-  font-size: 20px;
-  color: #B19381;
-  cursor: pointer;
-  border: none;
-  background: #D9D9D9;
-  border-radius: 10px;
-}
+  width: 837px;
+  height: 173px;
+  left: 32px;
+  top: 1200px;
 
-.container-caixa1 ::placeholder{
-  font-size: 20px;
-  color: #B19381;
   font-family: 'News Cycle', sans-serif;
-  font-weight: 700;
-  border: none;
-  font-size: 20px;
-  line-height: 33px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 41px;
 
+  color: #000000;
 }
-
-.container-caixa1 .senha1 {
+.container-caixa .informaçoes{
   position: absolute;
-  width: 333px;
-  height: 66px;
-  left: 30px;
-  top: 190px;
-  align-items: center;
-  border: none;
-  font-size: 20px;
-  color: #B19381;
-  background: #D9D9D9;
-  border-radius: 10px;
+  width: 278px;
+  height: 64px;
+  left: 18px;
+  top: 1328px;
+
+  font-family: 'News Cycle', sans-serif;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 41px;
+  text-decoration-line: underline;
+  cursor: pointer;
+
+  color: #000000;
 }
-
-.container-caixa1 .entrar1 {
+.btn-enviar{
   position: absolute;
-  width: 299px;
-  height: 57px;
-  left: 51px;
-  top: 320px;
-  font-size:20px ;
+  width: 105px;
+  height: 51px;
+  left: 20px;
+  top: 941px;
+  cursor: pointer;
   font-weight: bold;
   color: #FFFFFF;
-  border: 1px solid #FC8413;
-  background-color: #FC8413;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
+  border: 1px solid #07665F;
+  background: #07665F;
+  border-radius: 10px;
 }
-
-.container-caixa2 {
+.btn-cancelar{
   position: absolute;
-  width: 400px;
-  height: 427px;
-  left: 990px;
-  top: 292.5px;
-
+  width: 105px;
+  height: 51px;
+  left: 210px;
+  top: 941px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000000;
+  border: 1px solid #D9D9D9;
   background: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
-}
-
-.container-caixa1 .acesso1 {
-  position: absolute;
-  width: 300px;
-  height: 63px;
-  left: 30px;
-  top: 43px;
-
-  font-family: 'News Cycle', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 37px;
-  line-height: 54px;
-
-  color: #B19381;
-}
-
-.container-caixa2 .acesso2 {
-  position: absolute;
-  width: 300px;
-  height: 63px;
-  left: 30px;
-  top: 43px;
-
-  font-family: 'News Cycle', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 37px;
-  line-height: 54px;
-
-  color: #B19381;
-}
-
-.container-caixa2 .email2 {
-  position: absolute;
-  width: 333px;
-  height: 66px;
-  left: 30px;
-  top: 110px;
-  align-items: center;
-  border: none;
-  font-size: 20px;
-  color: #B19381;
-  cursor: pointer;
-  border: none;
-  background: #D9D9D9;
-  border-radius: 10px;
-}
-
-.container-caixa2 ::placeholder{
-  font-size: 20px;
-  color: #B19381;
-  font-family: 'News Cycle', sans-serif;
-  font-weight: 700;
-  border: none;
-  margin-right: 5px;
-  font-size: 20px;
-  line-height: 33px;
-
-}
-.container-caixa2 .senha2 {
-  position: absolute;
-  width: 333px;
-  height: 66px;
-  left: 30px;
-  top: 190px;
-  align-items: center;
-  border: none;
-  font-size: 20px;
-  color: #B19381;
-  background: #D9D9D9;
-  border-radius: 10px;
-}
-
-.container-caixa2 .criar {
-  position: absolute;
-  width: 299px;
-  height: 57px;
-  left: 51px;
-  top: 280px;
-
-  font-size:20px ;
-  font-weight: bold;
-  color: #FFFFFF;
-  border: 1px solid #FC8413;
-  background-color: #FC8413;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-}
-
-.container-caixa2 .criar-ong {
-  position: absolute;
-  width: 299px;
-  height: 57px;
-  left: 51px;
-  top: 350px;
-  font-size:20px ;
-  font-weight: bold;
-  color: #FFFFFF;
-  border: 1px solid #E8C230;;
-  background-color: #E8C230;;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-}
-
+}  
 /*CONTENER RODAPÉ*/
-.conteiner-buttom {
+.conteiner-buttom{
 
   position: absolute;
   width: 2000px;
   height: 300px;
   left: 3px;
-  top: 1000px;
+  top: 1870px;
 
   background: #07665F;
   border-radius: 5px;
 }
 
-.conteiner-buttom img {
+.conteiner-buttom img{
   position: absolute;
   width: 158px;
   height: 156px;
@@ -369,7 +347,7 @@ nav {
   top: 7px;
 }
 
-.conteiner-buttom p {
+.conteiner-buttom p{
   position: absolute;
   width: 317px;
   height: 99px;
@@ -384,8 +362,7 @@ nav {
   color: #FFFFFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-.conteiner-buttom h3 {
+.conteiner-buttom h3{
   position: absolute;
   width: 97px;
   height: 31px;
@@ -398,9 +375,9 @@ nav {
   line-height: 31px;
   text-align: justify;
   color: #FC8413;
-}
+} 
 
-.conteiner-item1 {
+.conteiner-item1{
 
   font-family: 'News Cycle', sans-serif;
   position: absolute;
@@ -417,7 +394,7 @@ nav {
   color: #FFFFFF;
 }
 
-.conteiner-item2 {
+.conteiner-item2{
 
   font-family: 'News Cycle', sans-serif;
   position: absolute;

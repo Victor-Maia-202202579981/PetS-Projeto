@@ -123,7 +123,7 @@ nav {
     width: 2000px;
     height: 326px;
     left: 0px;
-    top: 63px;  
+    top: 57px;  
     background: #EDD9A5;    
 }
 .conteirner-base-titulo1{
@@ -160,6 +160,8 @@ nav {
 .conteiner-guia{
     
     position: absolute;
+    list-style: none;
+    cursor: pointer;
     width: 218px;
     height: 286px;
     left: 150px; 
@@ -181,7 +183,6 @@ nav {
 
     font-family: 'News Cycle', sans-serif;
     font-style: normal;
-    font-weight: 700;
     font-size: 25px;
     line-height: 41px;
 
@@ -249,7 +250,7 @@ nav {
     font-weight: 700;
     font-size: 25px;
     line-height: 49px;
-
+    
     color: #000000;
 
 }
@@ -258,12 +259,13 @@ nav {
     position: absolute;
     left: 500px;
     top: 980px;
+    width: 921px;
+    height: 453px;
 
     font-family: 'News Cycle', sans-serif;
     font-style: normal;
     font-size: 18px;
     line-height: 39px;
-
     color: #000000;
 
 
