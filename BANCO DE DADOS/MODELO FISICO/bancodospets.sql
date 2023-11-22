@@ -1,42 +1,43 @@
-USE pets;
 
-CREATE TABLE adotante (
-    cpf_adotante CHAR(11) PRIMARY KEY,
-    email VARCHAR(200) UNIQUE,
-    senha VARCHAR(100),
-    nome VARCHAR(100),
-    data_nascimento DATE
+CREATE DATABASE `db_portal`;
+
+CREATE TABLE `ong` (
+    `cnpj` VARCHAR(100),
+    `email` VARCHAR(200) UNIQUE,
+    `senha` VARCHAR(100)
 );
 
-CREATE TABLE animal (
+CREATE TABLE `adotante` (
+    `cpf_adotante` CHAR(11) PRIMARY KEY,
+    `email` VARCHAR(200) UNIQUE,
+    `senha` VARCHAR(100)
+);
+
+CREATE TABLE `animal` (
     id_animal INT AUTO_INCREMENT PRIMARY KEY,
-    nome VARCHAR(20),
-    especie VARCHAR(200),
-    sexo ENUM ('M', 'F')
+    `nome` VARCHAR(20),
+    `especie` VARCHAR(200),
+    `cnpj_ong` CHAR(14)
 );
 
-CREATE TABLE adocao (
+CREATE TABLE `adocao` (
     id_adocao INT AUTO_INCREMENT PRIMARY KEY,
-    data_da_adocao DATE,
-    id_animal INT,
-    id_adotante CHAR(11),
-    FOREIGN KEY (id_animal) REFERENCES animal (id_animal),
-    FOREIGN KEY (id_adotante) REFERENCES adotante (cpf_adotante)
+    `resumo` VARCHAR(100),
+    `dt_adocao` varchar(10)
 );
 
-CREATE TABLE denuncia (
-    id_denuncia INT AUTO_INCREMENT PRIMARY KEY,
-    data_da_denuncia DATETIME,
-    descricao VARCHAR(100),
-    resumo VARCHAR(50),
-    id_adocao INT,
-    FOREIGN KEY (id_adocao) REFERENCES adocao (id_adocao)
+CREATE TABLE `denuncia` (
+    `descricao` VARCHAR(100),
+    `resumo` VARCHAR(50)
 );
 
-CREATE TABLE ONG (
-    cnpj_ong CHAR(14) PRIMARY KEY,
-    nome VARCHAR(100),
-    email VARCHAR(200) UNIQUE,
-    senha VARCHAR(100),
-    endereco VARCHAR(200)
-);
+CREATE TABLE `login_adotante` (
+  `email_adotante` varchar(50) NOT NULL,
+  `senha_login_adotante` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+CREATE TABLE `login_ong` (
+  `cnpj_ong` varchar(15) NOT NULL,
+  `senha_login_ong` varchar(15) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
