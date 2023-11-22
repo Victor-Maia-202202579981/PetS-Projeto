@@ -1,4 +1,4 @@
-# PetS-Projeto
+# PetS - Projeto
 
 ## ALUNOS: 
 ##### KAMILLY AMANCIO BATISTA  (Kamilly-Amancio) - 202202570397
